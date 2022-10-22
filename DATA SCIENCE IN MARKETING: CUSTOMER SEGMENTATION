@@ -1,0 +1,7 @@
+You can access the dataset https://storage.googleapis.com/dqlab-dataset/customer_segments.txt 
+data have field "Customer ID”, “Nama Pelanggan”,”Jenis Kelamin”,”Umur”, “Profesi”, “Tipe Residen” and, “Nilai Belanja Setahun”
+
+##Membaca Data dengan Fungsi read.csv
+pelanggan <- read.csv("https://storage.googleapis.com/dqlab-dataset/customer_segments.txt", sep="\t")
+pelanggan[c("Jenis.Kelamin", "Umur", "Profesi", "Tipe.Residen")]
+
