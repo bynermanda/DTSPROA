@@ -5,3 +5,9 @@ data have field "Customer ID”, “Nama Pelanggan”,”Jenis Kelamin”,”Umu
 pelanggan <- read.csv("https://storage.googleapis.com/dqlab-dataset/customer_segments.txt", sep="\t")
 pelanggan[c("Jenis.Kelamin", "Umur", "Profesi", "Tipe.Residen")]
 
+##Vektor untuk mennyimpan nama field
+pelanggan <- read.csv("https://storage.googleapis.com/dqlab-dataset/customer_segments.txt",sep="\t")
+field_yang_digunakan <-c("Jenis.Kelamin", "Umur", "Profesi")
+#Tampilan data pelanggan dengan nama kolom sesuai isi vector field_yang_digunakan
+pelanggan[field_yang_digunakan]
+
